@@ -21,4 +21,9 @@ a2enmod proxy_balancer
 
 ```
 Despues de activar estos modulos nos dirigimos a configurar apache. Nos dirijimos al directorio de apache y abrimos concretamente /etc/apache2/apache2.conf y introducimos esta configuraciones:
-(captura 1)
+
+![captura1](https://dl.dropbox.com/s/5ad3ik0k9ixpzvi/1.png)
+
+con esta configuracion ya tendriamos listo el balanceador de carga basado en proxy inverso.
+
+En las otras dos maquinas simplemente he instalado apache + mysql.
