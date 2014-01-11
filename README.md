@@ -27,3 +27,20 @@ Despues de activar estos modulos nos dirigimos a configurar apache. Nos dirijimo
 con esta configuracion ya tendriamos listo el balanceador de carga basado en proxy inverso.
 
 En las otras dos maquinas simplemente he instalado apache + mysql.
+
+```
+apt-get install apache2
+apt-get install mysql-server
+```
+
+Depues de realizar la configuracion de ambas maquinas podemos ver las direciones ip de las 3
+
+![captura 2](https://dl.dropbox.com/s/xulymv0aherrst7/4.png)
+
+y en las siguientes capturas la pagina web del periodico funcionando tanto en la maquina 1 o en la maquina 2:
+![captura 3](https://dl.dropbox.com/s/gltucpicg09t08c/3.png)
+
+![captura 4](https://dl.dropbox.com/s/ii23t60zai2m26p/2.png)
+
+
+
