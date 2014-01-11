@@ -20,4 +20,5 @@ a2enmod proxy_http
 a2enmod proxy_balancer
 
 ```
-Despues de activar estos modulos nos dirigimos a configurar apache:
+Despues de activar estos modulos nos dirigimos a configurar apache. Nos dirijimos al directorio de apache y abrimos concretamente /etc/apache2/apache2.conf y introducimos esta configuraciones:
+(captura 1)
