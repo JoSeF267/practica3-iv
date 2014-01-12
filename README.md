@@ -104,5 +104,10 @@ ab -n 10000 -c1000 http://192.168.37.136/index.php
 |v.transferencia |v.transferencia |v.transferencia |v.trasnferencia |v.transferencia |v.transferencia |
 |2786,53 kb/seg  |3090,13 kb/seg  |2957,29 kb/seg  |2900,kb/seg     |3196,67 kb/seg  |2888,61 kb/seg  |
 
-Despues de realizar las pruebas de carga y teniendo en cuenta los datos anteriores podemos decir que la configuracion que mas es mas adecuada para lo que queremos hacer es la ultima
+
+Despues de realizar las pruebas de carga y teniendo en cuenta los datos anteriores podemos decir que la configuracion que mas es mas adecuada para lo que queremos hacer es la 6ª configuracion, ya que tiene el mejor tiempo de respuesta.
+
+Conclusion
+------------------------------
+Despues de realizar todas las pruebas de carga puedo decir que al tener una granja web es mas facil tener una gran disponibilidad de nuestro sitio web ya que podemos repartir el trabajo entre varias maaquina. Incluso esto nos permite tener muchas masquinas virtuales montadas con caracteristicas basicas y trabajar como una maquina de grandes prestaciones. Lo cual esto nos lleva a un gra ahorro y a tener un servicio igual.
 
