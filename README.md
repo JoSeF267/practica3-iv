@@ -111,5 +111,5 @@ Despues de realizar las pruebas de carga y teniendo en cuenta los datos anterior
 
 Conclusion
 ------------------------------
-Despues de realizar todas las pruebas de carga puedo decir que al tener una granja web es mas facil tener una gran disponibilidad de nuestro sitio web ya que podemos repartir el trabajo entre varias maaquina. Incluso esto nos permite tener muchas masquinas virtuales montadas con caracteristicas basicas y trabajar como una maquina de grandes prestaciones. Lo cual esto nos lleva a un gra ahorro y a tener un servicio igual.
+Despues de realizar todas las pruebas de carga puedo decir que al tener una granja web es mas facil tener una gran disponibilidad de nuestro sitio web ya que podemos repartir el trabajo entre varias maaquina. Incluso esto nos permite tener muchas masquinas virtuales montadas con caracteristicas basicas y trabajar como una maquina de grandes prestaciones. Lo cual esto nos lleva a un gran ahorro y tener un servicio igual.
 
