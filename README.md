@@ -95,12 +95,12 @@ Pruebas de carga
 
 Para poder ver cuales de las configuraciones anteriores son las que mas no convienen para montar la graja web realizar una serie de test con la herramienta ab:
 ```
-ab -n 1000000 -10 http://192.168.37.136/index.php
+ab -n 10000 -c1000 http://192.168.37.136/index.php
 ```
 |1ª configuracion|2ª configuracion|3ª configuracion|4ª configuracion|5ª configuracion|6ª configuracion|
 |----------------|----------------|----------------|----------------|----------------|----------------|
 |tiempo respuesta|tiempo respuesta|tiempo respuesta|tiempo respuesta|tiempo respuesta|tiempo respuesta|
-|----------------|----------------|----------------|----------------|----------------|----------------|
+|329,27 seg      |----------------|----------------|----------------|----------------|----------------|
 |v.transferencia |v.transferencia |v.transferencia |v.trasnferencia |v.transferencia |v.transferencia |
-|----------------|----------------|----------------|----------------|----------------|----------------|
+|2786,53 kb      |----------------|----------------|----------------|----------------|----------------|
 
