@@ -100,7 +100,7 @@ ab -n 10000 -c1000 http://192.168.37.136/index.php
 |1ª configuracion|2ª configuracion|3ª configuracion|4ª configuracion|5ª configuracion|6ª configuracion|
 |----------------|----------------|----------------|----------------|----------------|----------------|
 |tiempo respuesta|tiempo respuesta|tiempo respuesta|tiempo respuesta|tiempo respuesta|tiempo respuesta|
-|329,27 seg      |365,26 seg      |349,56 seg      |342,83 seg      |377,86 seg      |341,44 seg      |
+|379,27 seg      |365,26 seg      |349,56 seg      |342,83 seg      |377,86 seg      |341,44 seg      |
 |v.transferencia |v.transferencia |v.transferencia |v.trasnferencia |v.transferencia |v.transferencia |
 |2786,53 kb/seg  |3090,13 kb/seg  |2957,29 kb/seg  |2900,kb/seg     |3196,67 kb/seg  |2888,61 kb/seg  |
 
