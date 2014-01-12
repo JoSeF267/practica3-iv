@@ -50,7 +50,7 @@ Depues de realizar la configuracion de ambas maquinas podemos ver las direciones
 
 ![captura 2](https://dl.dropbox.com/s/xulymv0aherrst7/4.png)
 
-y en las siguientes capturas la pagina web del periodico funcionando tanto en la maquina 1 o en la maquina 2:
+y en las siguientes capturas la pagina web del periodico funcionando tanto en la maquina 1 como en la maquina 2:
 ![captura 3](https://dl.dropbox.com/s/gltucpicg09t08c/3.png)
 
 ![captura 4](https://dl.dropbox.com/s/ii23t60zai2m26p/2.png)
