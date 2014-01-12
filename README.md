@@ -104,8 +104,10 @@ ab -n 10000 -c1000 http://192.168.37.136/index.php
 |v.transferencia |v.transferencia |v.transferencia |v.trasnferencia |v.transferencia |v.transferencia |
 |2786,53 kb/seg  |3090,13 kb/seg  |2957,29 kb/seg  |2900,kb/seg     |3196,67 kb/seg  |2888,61 kb/seg  |
 
+![captura 5](https://dl.dropbox.com/s/g06274lfdt3lu4g/grafica.png)
 
-Despues de realizar las pruebas de carga y teniendo en cuenta los datos anteriores podemos decir que la configuracion que mas es mas adecuada para lo que queremos hacer es la 6ª configuracion, ya que tiene el mejor tiempo de respuesta.
+
+Despues de realizar las pruebas de carga y teniendo en cuenta los datos anteriores podemos decir que la configuracion que es mas adecuada para lo que queremos hacer es la 6ª configuracion, ya que tiene el mejor tiempo de respuesta.
 
 Conclusion
 ------------------------------
