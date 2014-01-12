@@ -24,6 +24,19 @@ Despues de activar estos modulos nos dirigimos a configurar apache. Nos dirijimo
 
 ![captura1](https://dl.dropbox.com/s/5ad3ik0k9ixpzvi/1.png)
 
+Ahora explicare un poco la configuración del fichero apache2.conf.
+- [x] Servername: Simplemente le indico a apache cual es el nombre de mi servidor que en mi caso es localhost.
+- [x] Sethandler: Especifica donde esta el modulo que se debe de cargar
+- [x] ProxyRequest: Si estuviera On no serviría como balanceador seria un Proxy corriente para filtrado de direcciones.
+- [x] Proxy balancer: Indica cual es la maquina que recibirá las peticiones.
+- [x] BalanceMember: Se le indica cuales son los miembros a los que el balanceador enviara la petición.
+- [x] loadfactor: Es el factor de carga. A ambas maquinas le llegaran un 50% de carga.
+- [x] route: Es un identificador añadido de la maquina. Por eso debe de estar configurado el hosts
+- [x] Proxypass: actúa como mirror de nuestro servidor remoto siendo el origen de las respuestas al cliente.
+- [x] stickysesion: Es como una cookie que indica en que servidor ha estado el cliente.
+- [x] nofaillover: Si se activa y hay un error por parte del servidor este romperá la conexión y la redije a otro de los servidores.
+- [x] ProxyPassReverse: Indica cuales son los servidores finales a los cuales tiene que mandarle la petición el balanceador.
+
 con esta configuracion ya tendriamos listo el balanceador de carga basado en proxy inverso.
 
 En las otras dos maquinas simplemente he instalado apache + mysql.
