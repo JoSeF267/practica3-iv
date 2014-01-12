@@ -25,17 +25,17 @@ Despues de activar estos modulos nos dirigimos a configurar apache. Nos dirijimo
 ![captura1](https://dl.dropbox.com/s/5ad3ik0k9ixpzvi/1.png)
 
 Ahora explicare un poco la configuración del fichero apache2.conf.
-- [x] Servername: Simplemente le indico a apache cual es el nombre de mi servidor que en mi caso es localhost.
-- [x] Sethandler: Especifica donde esta el modulo que se debe de cargar
-- [x] ProxyRequest: Si estuviera On no serviría como balanceador seria un Proxy corriente para filtrado de direcciones.
-- [x] Proxy balancer: Indica cual es la maquina que recibirá las peticiones.
-- [x] BalanceMember: Se le indica cuales son los miembros a los que el balanceador enviara la petición.
-- [x] loadfactor: Es el factor de carga. A ambas maquinas le llegaran un 50% de carga.
-- [x] route: Es un identificador añadido de la maquina. Por eso debe de estar configurado el hosts
-- [x] Proxypass: actúa como mirror de nuestro servidor remoto siendo el origen de las respuestas al cliente.
-- [x] stickysesion: Es como una cookie que indica en que servidor ha estado el cliente.
-- [x] nofaillover: Si se activa y hay un error por parte del servidor este romperá la conexión y la redije a otro de los servidores.
-- [x] ProxyPassReverse: Indica cuales son los servidores finales a los cuales tiene que mandarle la petición el balanceador.
+-  Servername: Simplemente le indico a apache cual es el nombre de mi servidor que en mi caso es localhost.
+-  Sethandler: Especifica donde esta el modulo que se debe de cargar
+-  ProxyRequest: Si estuviera On no serviría como balanceador seria un Proxy corriente para filtrado de direcciones.
+-  Proxy balancer: Indica cual es la maquina que recibirá las peticiones.
+-  BalanceMember: Se le indica cuales son los miembros a los que el balanceador enviara la petición.
+-  loadfactor: Es el factor de carga. A ambas maquinas le llegaran un 50% de carga.
+-  route: Es un identificador añadido de la maquina. Por eso debe de estar configurado el hosts
+-  Proxypass: actúa como mirror de nuestro servidor remoto siendo el origen de las respuestas al cliente.
+-  stickysesion: Es como una cookie que indica en que servidor ha estado el cliente.
+-  nofaillover: Si se activa y hay un error por parte del servidor este romperá la conexión y la redije a otro de los servidores.
+-  ProxyPassReverse: Indica cuales son los servidores finales a los cuales tiene que mandarle la petición el balanceador.
 
 con esta configuracion ya tendriamos listo la granja web basada en proxy inverso.
 
@@ -87,7 +87,7 @@ Las maquinas que vamos a utilizar para comprobar cuales son las mejores son las 
 - 6ª configuracion:
 - balanceador: 2 nucleos,2048 ram, 10gb disco duro.
 - Maquina 1  : 2 nucleos,2048 ram, 10gb disco duro.
-- Maquina 2  : 2 nucleos,2048 ram, 10gb disco duro.ç
+- Maquina 2  : 2 nucleos,2048 ram, 10gb disco duro.
 
 
 Pruebas de carga
@@ -97,3 +97,10 @@ Para poder ver cuales de las configuraciones anteriores son las que mas no convi
 ```
 ab -n 1000000 -10 http://192.168.37.136/index.php
 ```
+|1ª configuracion|2ª configuracion|3ª configuracion|4ª configuracion|5ª configuracion|6ª configuracion|
+|----------------|----------------|----------------|----------------|----------------|----------------|
+|tiempo respuesta|tiempo respuesta|tiempo respuesta|tiempo respuesta|tiempo respuesta|tiempo respuesta|
+|----------------|----------------|----------------|----------------|----------------|----------------|
+|v.transferencia |v.transferencia |v.transferencia |v.trasnferencia |v.transferencia |v.transferencia |
+|----------------|----------------|----------------|----------------|----------------|----------------|
+
