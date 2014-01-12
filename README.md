@@ -37,7 +37,7 @@ Ahora explicare un poco la configuración del fichero apache2.conf.
 - [x] nofaillover: Si se activa y hay un error por parte del servidor este romperá la conexión y la redije a otro de los servidores.
 - [x] ProxyPassReverse: Indica cuales son los servidores finales a los cuales tiene que mandarle la petición el balanceador.
 
-con esta configuracion ya tendriamos listo el balanceador de carga basado en proxy inverso.
+con esta configuracion ya tendriamos listo la granja web basada en proxy inverso.
 
 En las otras dos maquinas simplemente he instalado apache + mysql.
 
@@ -55,5 +55,45 @@ y en las siguientes capturas la pagina web del periodico funcionando tanto en la
 
 ![captura 4](https://dl.dropbox.com/s/ii23t60zai2m26p/2.png)
 
+Tipos de maquinas que vamos a utilizar en la granja web
+------------------------------------------------------------------------------------------------------------------------
+Las maquinas que vamos a utilizar para comprobar cuales son las mejores son las siguientes:
+
+- 1ª configuracion:
+- balanceador:1 nucleo ,512 ram , 10gb disco duro.
+- Maquina 1 : 1 nucleo ,512 ram , 10gb disco duro.
+- Maquina 2 : 1 nucleo ,512 ram , 10gb disco duro.
+
+- 2ª configuracion:
+- balanceador: 1 nucleo,1024 ram , 10gb disco duro.
+- Maquina 1 :  1 nucleo,1024 ram , 10gb disco duro.
+- Maquina 2 :  1 nucleo,1024 ram , 10gb disco duro.
+
+- 3ª configuracion:
+- balanceador: 1 nucleo,2048 ram, 10gb disco duro.
+- Maquina 1  : 1 nucleo,2048 ram, 10gb disco duro.
+- Maquina 2  : 1 nucleo,2048 ram, 10gb disco duro.
+
+- 4ª configuracion:
+- balanceador: 2 nucleos,512 ram, 10gb disco duro.
+- Maquina 1  : 2 nucleos,512 ram, 10gb disco duro.
+- Maquina 2  : 2 nucleos,512 ram, 10gb disco duro.
+
+- 5ª configuracion:
+- balanceador: 2 nucleos,1024 ram, 10gb disco duro.
+- Maquina 1  : 2 nucleos,1024 ram, 1ogb disco duro.
+- Maquina 2  : 2 nucleos,1024 ram, 10gb disco duro.
+
+- 6ª configuracion:
+- balanceador: 2 nucleos,2048 ram, 10gb disco duro.
+- Maquina 1  : 2 nucleos,2048 ram, 10gb disco duro.
+- Maquina 2  : 2 nucleos,2048 ram, 10gb disco duro.ç
 
 
+Pruebas de carga
+------------------------------------------------------------------------------------------------------------------------
+
+Para poder ver cuales de las configuraciones anteriores son las que mas no convienen para montar la graja web realizar una serie de test con la herramienta ab:
+```
+ab -n 1000000 -10 http://192.168.37.136/index.php
+```
